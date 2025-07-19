@@ -1,0 +1,513 @@
+*{
+  font-family: poppins, sans-serif;
+}
+
+html{
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a{
+  font-size: 17px;
+  text-decoration: none;
+  color:  rgb(75, 241, 86);
+}
+a:hover{
+
+  color: rgb(211, 159, 0);
+}
+
+.navBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  backdrop-filter:blur(30px);
+  background-color: rgba(0, 0, 0, 0.196);
+  z-index: 100;
+  border-bottom: 1px solid rgb(0, 169, 11);
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img{
+  width: 100px;
+}
+
+.logo p{
+  font-size: 30px;
+  color: rgb(211, 159, 0);
+}
+
+.infoBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+  flex-direction: row;
+  list-style: none;
+  color: black;
+  padding-right: 20px;
+}
+.nav_info{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+
+.province1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 630px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+
+}
+
+.province{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  animation: change 20s ease-in infinite;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  filter: brightness(1.5);
+  border-radius: 0 0 20px 20px;
+}
+
+@keyframes change{
+  0%{
+    background-image: url(./../img/img-accueil/group-friends-from-diverse-backgrounds-hike-through-lush-forest-enjoying-natural-light-vibrant-greenery-their-joyful-camaraderie-makes-experience-unforgettable_941549-7251.jpg);
+  }
+  38%{
+    background-image: url(./../img/img-accueil/group-friends-from-diverse-backgrounds-hike-through-lush-forest-enjoying-natural-light-vibrant-greenery-their-joyful-camaraderie-makes-experience-unforgettable_941549-7251.jpg);
+  }
+  40%{
+    background-image: url(./../img/img-accueil/vertical-shot-some-beautiful-trees-sun-setting-background_181624-4522.avif);
+  }
+  78%{
+    background-image: url(./../img/img-accueil/vertical-shot-some-beautiful-trees-sun-setting-background_181624-4522.avif);
+  }
+  80%{
+    background-image: url(./../img/img-accueil/city-illuminate-by-sun_1112-601.avif);
+  }
+  100%{
+    background-image: url(./../img/img-accueil/city-illuminate-by-sun_1112-601.avif);
+  }
+}
+
+.obscurite{
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.32);
+  z-index: 2;
+}
+
+.text_province{
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.text_province h1{
+  font-size: 60px;
+  font-family: poppins, sans-serif;
+  color: white;
+}
+.text_province button{
+  font-size: 17px;
+  width: 200px;
+  padding: 10px 0 10px 0;
+  border-radius: 10px;
+  background-color: rgb(0, 169, 11);
+  color: white;
+  border: none;
+}
+
+.text_province button:hover{
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.0001);
+  color: rgb(100, 245, 110);
+  border: 1px solid white;
+}
+
+
+
+.text_province p{
+  font-size: 20px;
+  padding: 0 60px 0 60px;
+ 
+}
+.text_province .para{
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(100, 245, 110);
+}
+
+.text_province .para1{
+  border: 1px solid rgb(247, 197, 48);
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+
+.text_province .boutton{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 200px 0 200px;
+}
+
+h2{
+  font-size: 25px;
+  color: rgb(0, 169, 11);
+}
+
+
+.pp{
+  margin-top: -20px;
+}
+
+.carte{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carte1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.admin{
+  padding: 10px;
+  height: 500px;
+  width: 400px;
+  border: 1px solid rgb(0, 169, 11);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.admin img{
+  height: 360px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.economie{
+  padding: 10px;
+  height: 500px;
+  width: 600px;
+  border: 1px solid rgb(0, 169, 11);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.economie img{
+  height: 330px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carte2{
+  padding: 5px;
+  height: 380px;
+  border: 1px solid rgb(0, 169, 11);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.carte2 img{
+
+  height: 100%;
+  width: auto;
+  border-radius: 10px;
+}
+
+.carte-texte{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.carte .carte3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.sante{
+  padding: 10px;
+  height: 500px;
+  width: 600px;
+  border: 1px solid rgb(0, 169, 11);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sante img{
+  height: 330px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.infra{
+  padding: 10px;
+  height: 500px;
+  width: 400px;
+  border: 1px solid rgb(0, 169, 11);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.infra img{
+  height: 360px;
+  width: 100%;
+  border-radius: 10px;
+}
+.carte a{
+  color: rgb(211, 159, 0);
+  font-size: 18px;
+}
+.Actualite{
+  margin-bottom: 30px;
+}
+
+.Actualite h1{
+  font-size: 30px;
+  color: rgb(211, 159, 0);
+  margin-bottom: -5px;
+  padding-left: 10px;
+  border-left: 3px solid rgb(211, 159, 0);
+  margin-left: 40px;
+
+}
+
+.carousel-wrapper{
+  position: relative;
+  padding: 20px;
+}
+
+.carousel-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  scroll-behavior: smooth;
+ 
+}
+
+.card .p1{grid-area: "p1";}
+.card .p2{grid-area: "p2";}
+.card .p3{grid-area: "p3";}
+.card .p4{grid-area: "p4"; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);}
+.card .p5{grid-area: "p5"; box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);}
+.card .p6{grid-area: "p6";}
+
+.carousel{
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+   grid-template-areas:"p1 p2 p3"
+                      "p4 p5 p6";
+  gap: 40px;
+}
+
+.card{
+  flex: 0 0 auto;
+  width: 350px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid rgb(0, 169, 11);
+}
+
+.card img{
+  width: 399px;
+  height: 390px;
+}
+
+.card .liste{
+  padding: 10px;
+}
+
+.card .liste h4{
+  color: rgb(0, 169, 11);
+}
+
+.btn{
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn p{
+  font-size: 40px;
+  color: rgb(211, 159, 0);
+}
+.btn button{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color:  rgb(211, 159, 0);
+  color: white;
+  border: none;
+}
+
+.btn button:hover{
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.0001);
+  color:  rgb(211, 159, 0);
+  border: 1px solid rgb(211, 159, 0);
+}
+
+.footerIcon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgb(209, 209, 209);
+}
+
+
+.pied{
+  background-color: rgb(7, 7, 72);
+  color: rgba(211, 158, 0, 0.726);
+  width: 100%;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 18px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.titrePied{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 10px;
+}
+
+.titrePied div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titrePied div h4{
+  color: rgb(255, 255, 255);
+}
+.classe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(209, 209, 209);
+}
+
+.classe li{
+  padding: 5px;
+}
+.classe a{
+  color:rgb(209, 209, 209);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.classe a:hover{
+  color: white;
+}
+
+
+.legal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid rgb(75, 75, 78);
+}
+.legal p{
+   color: rgb(209, 209, 209);
+}
