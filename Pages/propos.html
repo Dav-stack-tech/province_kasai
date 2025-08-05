@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A propos</title>
   <link rel="shortcut icon" href="./../tools/img/logo/Gemini_Generated_Image_bxn9chbxn9chbxn9-removebg-preview.png">
+  <link rel="stylesheet" href="./../tools/css/style_propos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
@@ -14,16 +16,31 @@
        <p>Kasai-central</p>
       </div>
       
-      <div class="nav_info">
+      <div class="nav_info" id="navInfo">
          <uv class="infoBar">
           <a href="./../index.html" class="icon"><i class="fas fa-home"></i><li>Accueil</li></a>
           <a href="#" style="color: rgb(211, 159, 0); transform: scale(1.05);" class="icon"><i class="fas fa-info-circle"></i><li>A propos</li></a>
           <a href="./../Pages/admin.html" class="icon"><i class="fas fa-gavel"></i> <li>Administration</li></a>
           <a href="./../Pages/economie.html" class="icon"><i class="fas fa-coins"></i><li>Economie</li></a>
           <a href="./../Pages/tourisme.html" class="icon"><i class="fas fa-binoculars"></i><li>Tourisme</li></a>
-          <a href="#sectionContact" class="icon"><i class="fa-solid fa-phone  bb"></i><li>Contact</li></a>
         </uv>
       </div>
+
+       <i class="fas fa-bars humberger" onclick="openMenu()"></i>
+
+       <div class="side-menu" id="sideMenu">
+        <i class="fa-solid fa-xmark close-btn" onclick="closeMenu()"></i>
+        <ul>
+          <a href="./../index.html" class="icon"><i class="fas fa-home"></i><li>Accueil</li></a>
+          <a href="#" style="color: rgb(211, 159, 0); transform: scale(1.05);" class="icon"><i class="fas fa-info-circle"></i><li>A propos</li></a>
+          <a href="./../Pages/admin.html" class="icon"><i class="fas fa-gavel"></i> <li>Administration</li></a>
+          <a href="./../Pages/economie.html" class="icon"><i class="fas fa-coins"></i><li>Economie</li></a>
+          <a href="./../Pages/tourisme.html" class="icon"><i class="fas fa-binoculars"></i><li>Tourisme</li></a>
+        </ul>
+      </div>
+
+      <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
     </nav>
   </header>
 
@@ -32,10 +49,7 @@
       <div class="propos1">
       <h1>A propos de Kasai-central</h1>
       <p>Située au centre de la République Démocratique du Congo, la province occupe une position stratégique qui en fait un carrefour d’échanges humains, culturels et économiques. Ayant comme capitale <span style="color: rgb(75, 241, 86);">Kananga</span>, elle couvre une superficie d’environ <span style="color: rgb(75, 241, 86);">95 631 km²</span> et abrite une population estimée à plus de
-        <span style="color: rgb(75, 241, 86);">3 millions d’habitants</span>.
-Sa mission est de promouvoir le développement local, de garantir le bien-être de ses citoyens et de renforcer les institutions pour une gouvernance efficace, inclusive et durable.
-
-</p>
+        <span style="color: rgb(75, 241, 86);">3 millions d’habitants</span>.Sa mission est de promouvoir le développement local, de garantir le bien-être de ses citoyens et de renforcer les institutions pour une gouvernance efficace, inclusive et durable.</p>
       </div>
     </div>
 
@@ -45,9 +59,7 @@ Sa mission est de promouvoir le développement local, de garantir le bien-être 
         <p>La province a été créée lors du découpage administratif de 2015, à partir de l’ancienne province du Kasaï-Occidental, dans le cadre de la décentralisation prévue
            par la Constitution de 2006. Ce changement visait à rapprocher les institutions de la population et à renforcer la gouvernance locale.
            Depuis sa création, la province a connu plusieurs étapes marquantes, notamment la mise en place de ses premières institutions, des efforts pour 
-           la reconstruction post-crise, ainsi que le lancement de projets de développement dans les domaines de l’infrastructure, de l’éducation et de la santé.
-
-        </p>
+           la reconstruction post-crise, ainsi que le lancement de projets de développement dans les domaines de l’infrastructure, de l’éducation et de la santé.</p>
       </div>
       <div class="imgStory">
         <img src="./../tools/img/propos/handcrafted-wooden-decorative-sculpture_23-2151003000.avif">
@@ -66,11 +78,11 @@ Sa mission est de promouvoir le développement local, de garantir le bien-être 
         </div>
       </div>
 
-      <div class="vision">
-        <div class="imgVision">
+      <div class="mission">
+        <div class="imgMission">
           <img src="./../tools/img/propos/forest-warden-using-binoculars-side-view_23-2149557258.avif">
         </div>
-        <div class="textVision">
+        <div class="textMission">
           <h3>Vision</h3>
           <p>La province aspire à devenir un territoire moderne, uni et prospère, où chaque citoyen a accès aux services essentiels, à la sécurité et à 
             des opportunités de développement durable.</p>
@@ -79,11 +91,11 @@ Sa mission est de promouvoir le développement local, de garantir le bien-être 
     </div>
 
     <div class="valorg">
-      <div class="valeur">
-        <div class="imgValeur">
+      <div class="orga">
+        <div class="imgOrga">
           <img src="./../tools/img/propos/group-people-with-their-fists-air-with-one-them-saying-we-are-people_780838-1347.jpg">
         </div>
-        <div class="textValeur">
+        <div class="textOrga">
           <h3>Valeurs</h3>
           <p>La province fonde son action sur des valeurs de paix, de solidarité, de 
             transparence, de responsabilité et de respect de la dignité humaine.</p>
@@ -101,25 +113,12 @@ Sa mission est de promouvoir le développement local, de garantir le bien-être 
       </div>
     </div>
 
-    <div id="sectionContact" class="contact">
-      contact
-    </div>
+    <script src="./../Script.js"></script>
   </body>
 
-   <footer>
-   <div class="pied">
+  <footer>
+    <div class="pied">
       <div class="titrePied">
-        
-         <div>
-          <h4>A propos de la province</h4>
-          <uv class="classe">
-            <li>Histoire de la province</li>
-            <li>Carte géographique</li>
-            <li>Population & culutures</li>
-            <li>Symboles officiels</li>
-          </uv>
-        </div>
-
          <div>
           <h4>Institutions provinciales</h4>
           <uv class="classe">
@@ -129,12 +128,22 @@ Sa mission est de promouvoir le développement local, de garantir le bien-être 
           </uv>
         </div>
 
-         <div>
+        <div>
+          <h4>Liens rapides</h4>
+          <uv class="classe">
+            <a href="./../index.html"><li>Accueil</li></a>
+            <a href="./../Pages/admin.html"><li>Administration</li></a>
+            <a href="./../Pages/economie.html"><li>Economie</li></a>
+            <a href="./../Pages/tourisme.html"><li>Tourisme</li></a>
+          </uv>
+        </div>
+
+        <div>
           <h4>Contact</h4>
           <uv class="classe">
-           <a href="https://www.google.com/maps/place/Kasa%C3%AF-Central/@-6.0410388,19.9361622,7z/data=!3m1!4b1!4m6!3m5!1s0x1a275db9ffe74dad:0x4a32c705450e287b!8m2!3d-6.2514921!4d22.2384017!16s%2Fg%2F11bx55x219?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="footerIcon"><i class="fas fa-location-dot"></i><li>RDC,kasai-central</li></a>
-            <a href="#" class="footerIcon"><i class="fas fa-phone"></i><li>+243 993434727</li></a>
-            <a href="#" class="footerIcon"><i class="fas fa-envelope"></i><li>kasaicentral@gmail.cd</li></a>
+            <a href="https://www.google.com/maps/place/Kasa%C3%AF-Central/@-6.0410388,19.9361622,7z/data=!3m1!4b1!4m6!3m5!1s0x1a275db9ffe74dad:0x4a32c705450e287b!8m2!3d-6.2514921!4d22.2384017!16s%2Fg%2F11bx55x219?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="footerIcon"><i class="fas fa-location-dot"></i><li>RDC,kasai-central</li></a>
+            <a href="https://wa.me/243993434727" target="_blank" class="footerIcon"><i class="fab fa-whatsapp"></i><li>+243 993434727</li></a>
+            <a href="mailto:amanimusafiri2007@gmail.com"  target="_blank"class="footerIcon"><i class="fas fa-envelope"></i><li>kasaicentral-rdc@gmail.cd</li></a>
           </uv>
         </div>
 
@@ -143,7 +152,6 @@ Sa mission est de promouvoir le développement local, de garantir le bien-être 
           <uv class="classe">
             <a href="#" classe="footerIcon"><i class="fab fa-facebook"></i><li>Facebook</li></a>
             <a href="#" classe="footerIcon"><i class="fab fa-youtube"></i><li>Youtube</li></a>
-            <a href="#" classe="footerIcon"><i class="fab fa-whatsapp"></i><li>WhastApp</li></a>
             <a href="#" classe="footerIcon"><i class="fab fa-x-twitter"></i><li>X(Twitter)</li></a>
             <a href="#" classe="footerIcon"><i class="fab fa-instagram"></i><li>Instagram</li></a>
           </uv>
@@ -156,8 +164,5 @@ Sa mission est de promouvoir le développement local, de garantir le bien-être 
       </div>
     </div>
   </footer>
-  
-  <link rel="stylesheet" href="./../tools/css/style_propos.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </body>
 </html>

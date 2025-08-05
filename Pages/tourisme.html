@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tourisme</title>
   <link rel="shortcut icon" href="./../tools/img/logo/Gemini_Generated_Image_bxn9chbxn9chbxn9-removebg-preview.png">
+  <link rel="stylesheet" href="./../tools/css/style_tourisme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="./tools/css/style_accueil.css">
 </head>
 <body>
   <header>
@@ -14,40 +16,213 @@
        <p>Kasai-central</p>
       </div>
       
-      <div class="nav_info">
+      <div class="nav_info" id="navInfo">
          <uv class="infoBar">
           <a href="./../index.html" class="icon"><i class="fas fa-home"></i><li>Accueil</li></a>
           <a href="./../Pages/propos.html" class="icon"><i class="fas fa-info-circle"></i><li>A propos</li></a>
           <a href="./../Pages/admin.html" class="icon"><i class="fas fa-gavel"></i> <li>Administration</li></a>
           <a href="./../Pages/economie.html" class="icon"><i class="fas fa-coins"></i><li>Economie</li></a>
           <a href="#" style="color: rgb(211, 159, 0); transform: scale(1.05);" class="icon"><i class="fas fa-binoculars"></i><li>Tourisme</li></a>
-          <a href="#sectionContact" class="icon"><i class="fa-solid fa-phone  bb"></i><li>Contact</li></a>
         </uv>
       </div>
+
+       <i class="fas fa-bars humberger" onclick="openMenu()"></i>
+
+       <div class="side-menu" id="sideMenu">
+        <i class="fa-solid fa-xmark close-btn" onclick="closeMenu()"></i>
+        <ul>
+          <a href="./../index.html" class="icon"><i class="fas fa-home"></i><li>Accueil</li></a>
+          <a href="./../Pages/propos.html" class="icon"><i class="fas fa-info-circle"></i><li>A propos</li></a>
+          <a href="./../Pages/admin.html" class="icon"><i class="fas fa-gavel"></i> <li>Administration</li></a>
+          <a href="./../Pages/economie.html" class="icon"><i class="fas fa-coins"></i><li>Economie</li></a>
+          <a href="#" style="color: rgb(211, 159, 0); transform: scale(1.05);" class="icon"><i class="fas fa-binoculars"></i><li>Tourisme</li></a>
+        </ul>
+      </div>
+
+      <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
     </nav>
   </header>
 
   <body class="corp">
-
-    <div id="sectionContact" class="contact">
-      contact
+    <div class="tour">
+      <div class="tour1">
+          <h1>Culture & Tourisme</h1>
+          <p>La Province du Kasaï-Central regorge de richesses culturelles et de sites touristiques uniques. Entre traditions vivantes, artisanat local, paysages naturels impressionnants et festivals populaires, elle offre un véritable patrimoine à découvrir et à valoriser. Cette section vous invite à explorer les merveilles culturelles et les opportunités touristiques qui font la fierté de la province.</p>
+      </div>
     </div>
+
+    <div class="culture">
+      <h2>Culture</h2>
+      <div class="patriArti">
+        <div class="patrimoine">
+          <div class="imgPatrimoine">
+            <img src="./../tools/img/tourisme/group-happy-african-women-traditional-clothing-playing-drums-dancing-lush-green-field_14117-342715.jpg">
+          </div>
+          <div class="textPatrimoine">
+            <h3>Patrimoine culturel</h3>
+            <p>Le Kasaï-Central possède un patrimoine culturel riche, hérité des traditions ancestrales de ses peuples. Danses, chants, rites, artisanat et savoir-faire locaux témoignent de l’identité profonde de la province. La transmission de ces valeurs à travers les générations renforce le lien social et contribue à la préservation de l’histoire et de l’âme du territoire.</p>
+          </div>
+        </div>
+
+        <div class="Artisanat">
+          <div class="imgArtisanat">
+            <img src="./../tools/img/tourisme/view-ancient-paper-scroll-writing-documenting_23-2151751644.avif">
+          </div>
+          <div class="textArtisanat">
+            <h3>Artisanat local</h3>
+            <p>L’artisanat du Kasaï-Central reflète le talent et la créativité de ses habitants. À travers la sculpture, le tissage, la poterie ou la fabrication de bijoux traditionnels, les artisans perpétuent un savoir-faire ancestral tout en valorisant l’identité culturelle de la province. Ces œuvres sont souvent fabriquées à la main et utilisées dans la vie quotidienne, les cérémonies ou comme objets d’art.</p>
+          </div>
+        </div>
+      </div>
+      <div class="evenement">
+        <div class="imgEvenement">
+          <img src="./../tools/img/tourisme/portrait-photorealistic-rastafari-woman-with-african-dreads_23-2151516429.jpg">
+        </div>
+        <div class="textEvenement">
+          <h3>Evènements culturels</h3>
+          <p>Les événements culturels occupent une place importante dans la vie sociale du Kasaï-Central. Ils rassemblent les communautés autour de leurs traditions et favorisent l’expression de l’identité collective. Festivals de danse 
+            traditionnelle, journées culturelles, expositions artisanales ou cérémonies coutumières rythment le calendrier provincial. Ces manifestations permettent non seulement de préserver les coutumes locales, mais aussi de promouvoir le dialogue entre les générations, de valoriser 
+            les talents artistiques et de renforcer le sentiment d’appartenance. Elles attirent également des visiteurs venus découvrir la richesse culturelle de la province, contribuant ainsi au développement du tourisme local.</p>
+        </div>
+      </div>
+    </div>
+
+ <div class="tourisme">
+    <h2>Tourisme</h2>
+      <div class="sites">
+        <h3>Sites touristiques</h3>
+        <div class="chute">
+          <div class="chute1">
+            <div class="imgChute1">
+              <img src="./../tools/img/tourisme/d8c90fb3ec8ee32f99c0287fe0f7b521.jpg">
+            </div>
+            <div class="textChute1">
+              <h4>Chute de Katende</h4>
+              <p>Situées à proximité des villages de Lumbala et Tshimbao, les chutes de Katende offrent un spectacle naturel saisissant, avec une hauteur d’environ 656 mètres d’altitude et un large débit en saison des pluies. Ces chutes figurent parmi les sites les plus remarquables du Kasaï‑Central. </p>
+            </div>         
+          </div>
+
+          <div class="chute1">
+            <div class="imgChute1">
+              <img src="./../tools/img/tourisme/7b000ddc6197f49d09443f6191dd535b.jpg">
+            </div>
+            <div class="textChute1">
+              <h4>Rivière Kasai</h4>
+              <p>La rivière Kasai, long fleuve de plus de 2 000 km, traverse une grande partie du Kasaï‑Central avant de rejoindre le fleuve Congo. Elle est essentielle à l'économie locale : irrigation, pêche, transport fluvial et commerce. Son vaste bassin, entouré de savanes et de forêts tropicales, offre un cadre écologique riche et diversifié</p>
+            </div>         
+          </div>
+
+          <div class="chute1">
+            <div class="imgChute1">
+              <img src="./../tools/img/tourisme/ae49f926d7111fb0da1aaaf9fa804031.jpg">
+            </div>
+            <div class="textChute1">
+              <h4>Chute Tshofa Waterfall</h4>
+              <p>À environ 30 km au sud-est de Kananga, la Tshofa Waterfall est une cascade d’environ 30 mètres de hauteur tombant dans un bassin naturel. L’eau y est claire et le cadre forestier paisible en fait une destination idéale pour les promenades, la baignade et la photographie.</p>
+            </div>         
+          </div>
+        </div>
+
+        <div class="forest">
+          <div class="forest1">
+            <div class="forestA">
+              <div class="imgForestA">
+                <img src="./../tools/img/tourisme/315691d96379d5705864d356eae90bcb.jpg">
+              </div>
+              <div class="textForestA">
+                <h4>Forêt de Katende</h4>
+                <p>La forêt de Katende, située près de la rivière du même nom, est une zone boisée utilisée par les communautés locales pour le bois, les plantes médicinales et l’agriculture. Elle joue un rôle important dans la protection des sols et du climat local.</p>
+              </div>
+            </div>
+
+            <div class="forestA">
+              <div class="imgForestA">
+                <img src="./../tools/img/tourisme/giraffe-is-standing-grass-with-car-background_917313-21926.avif">
+              </div>
+              <div class="textForestA">
+                <h4>Forêt de la Lulua</h4>
+                <p>Bordant la rivière Lulua, cette forêt est composée de galeries forestières et de savanes arborées. Elle fournit aux habitants des ressources naturelles essentielles comme le bois, les fruits sauvages et les plantes médicinales.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="forest1">
+            <div class="forestA">
+              <div class="imgForestA">
+                <img src="./../tools/img/tourisme/beautiful-lion-with-safari-car-background-kenya-africa_71041-11.avif">
+              </div>
+              <div class="textForestA">
+                <h4>Forêt de Dibatayi</h4>
+                <p>Située près de Dibaya, la forêt de Dibatayi est une zone boisée exploitée de façon traditionnelle. Elle sert principalement à la collecte de bois, de produits naturels et à certaines activités agricoles locales.</p>
+              </div>
+            </div>
+
+            <div class="forestA">
+              <div class="imgForestA">
+                <img src="./../tools/img/tourisme/closeup-shot-elephants-standing-near-lake-sunset_181624-29375.avif">
+              </div>
+              <div class="textForestA">
+                <h4>Forêt de Demba</h4>
+                <p>La forêt de Demba, localisée dans le territoire du même nom, est une zone naturelle encore peu explorée. Elle est utilisée par les communautés voisines pour la chasse, le bois et certaines pratiques coutumières.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="serTour">
+        <h3>Services pour les touristes</h3>
+        <div class="serTour1">
+          <div class="hotel">
+            <div class="imgHotel">
+              <img src="./../tools/img/tourisme/close-up-chair-by-window-home_1048944-28547565.avif">
+            </div>
+            <div class="textHotel">
+              <div class="porto">
+                <img src="./../tools/img/tourisme/close-up-chair-by-window-home_1048944-28547565.avif">
+                <h4>Hotels</h4>
+              </div>
+              <p>Dans les zones proches des forêts de Katende ou de la Lulua, quelques petits hôtels accueillent les visiteurs dans un cadre calme et naturel. Bien que simples, ces établissements offrent un confort satisfaisant, un accueil chaleureux et des services adaptés aux touristes : chambres propres, repas locaux, et parfois même des guides pour explorer la nature environnante.</p>
+            </div>
+          </div>
+
+          <div class="hotel">
+            <div class="imgHotel">
+              <img src="./../tools/img/tourisme/black-guide-hikers_622301-692.avif">
+            </div>
+            <div class="textHotel">
+              <div class="porto">
+                <img src="./../tools/img/tourisme/black-guide-hikers_622301-692.avif">
+                <h4>Agence touristisque</h4>
+              </div>
+              <p>L’agence touristique du Kasaï-Central accompagne les visiteurs dans la découverte de la province. Elle propose des circuits guidés, l’organisation de séjours en forêt, des excursions culturelles et la réservation d’hébergements. Avec un personnel professionnel et passionné, l’agence garantit une expérience enrichissante et sécurisée pour tous les voyageurs.</p>
+            </div>
+          </div>
+
+          <div class="hotel">
+            <div class="imgHotel">
+              <img src="./../tools/img/tourisme/full-shot-forest-wardens-nature_23-2149557292.avif">
+            </div>
+            <div class="textHotel">
+              <div class="porto">
+                <img src="./../tools/img/tourisme/full-shot-forest-wardens-nature_23-2149557292.avif">
+                <h4>Guide touristique</h4>
+              </div>
+              <p>Le guide touristique est un connaisseur passionné du Kasaï-Central qui accompagne les visiteurs lors de leurs aventures. Il partage ses savoirs sur la nature, la culture et l’histoire locale, tout en assurant la sécurité et le confort des voyageurs. Grâce à son expertise, chaque excursion devient une expérience authentique et riche en découvertes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./../Script.js"></script>
   </body>
 
-   <footer>
+     <footer>
     <div class="pied">
       <div class="titrePied">
         
-         <div>
-          <h4>A propos de la province</h4>
-          <uv class="classe">
-            <li>Histoire de la province</li>
-            <li>Carte géographique</li>
-            <li>Population & culutures</li>
-            <li>Symboles officiels</li>
-          </uv>
-        </div>
-
          <div>
           <h4>Institutions provinciales</h4>
           <uv class="classe">
@@ -57,12 +232,22 @@
           </uv>
         </div>
 
+        <div>
+          <h4>Liens rapides</h4>
+          <uv class="classe">
+            <a href="./../index.html"><li>Accueil</li></a>
+            <a href="./../Pages/propos.html"><li>A propos</li></a>
+            <a href="./../Pages/admin.html"><li>Administration</li></a>
+            <a href="./../Pages/economie.html"><li>Economie</li></a>
+          </uv>
+        </div>
+
          <div>
           <h4>Contact</h4>
           <uv class="classe">
             <a href="https://www.google.com/maps/place/Kasa%C3%AF-Central/@-6.0410388,19.9361622,7z/data=!3m1!4b1!4m6!3m5!1s0x1a275db9ffe74dad:0x4a32c705450e287b!8m2!3d-6.2514921!4d22.2384017!16s%2Fg%2F11bx55x219?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="footerIcon"><i class="fas fa-location-dot"></i><li>RDC,kasai-central</li></a>
-            <a href="#" class="footerIcon"><i class="fas fa-phone"></i><li>+243 993434727</li></a>
-            <a href="#" class="footerIcon"><i class="fas fa-envelope"></i><li>kasaicentral@gmail.cd</li></a>
+            <a href="https://wa.me/243993434727" target="_blank" class="footerIcon"><i class="fab fa-whatsapp"></i><li>+243 993434727</li></a>
+            <a href="mailto:amanimusafiri2007@gmail.com" target="_blank" class="footerIcon"><i class="fas fa-envelope"></i><li>kasaicentral-rdc@gmail.cd</li></a>
           </uv>
         </div>
 
@@ -71,7 +256,6 @@
           <uv class="classe">
             <a href="#" classe="footerIcon"><i class="fab fa-facebook"></i><li>Facebook</li></a>
             <a href="#" classe="footerIcon"><i class="fab fa-youtube"></i><li>Youtube</li></a>
-            <a href="#" classe="footerIcon"><i class="fab fa-whatsapp"></i><li>WhastApp</li></a>
             <a href="#" classe="footerIcon"><i class="fab fa-x-twitter"></i><li>X(Twitter)</li></a>
             <a href="#" classe="footerIcon"><i class="fab fa-instagram"></i><li>Instagram</li></a>
           </uv>
@@ -84,7 +268,5 @@
       </div>
     </div>
   </footer>
-  <link rel="stylesheet" href="./../tools/css/style_tourisme.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="./tools/css/style_accueil.css">
 </body>
 </html>

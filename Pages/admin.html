@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Administrations</title>
+  <title>Administration</title>
   <link rel="shortcut icon" href="./../tools/img/logo/Gemini_Generated_Image_bxn9chbxn9chbxn9-removebg-preview.png">
+  <link rel="stylesheet" href="./../tools/css/style_admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
@@ -14,127 +16,192 @@
        <p>Kasai-central</p>
       </div>
       
-      <div class="nav_info">
+      <div class="nav_info" id="navInfo">
          <uv class="infoBar">
           <a href="./../index.html" class="icon"><i class="fas fa-home"></i><li>Accueil</li></a>
           <a href="./../Pages/propos.html" class="icon"><i class="fas fa-info-circle"></i><li>A propos</li></a>
           <a href="#" style="color: rgb(211, 159, 0); transform: scale(1.05);" class="icon"><i class="fas fa-gavel"></i> <li>Administration</li></a>
           <a href="./../Pages/economie.html" class="icon"><i class="fas fa-coins"></i><li>Economie</li></a>
           <a href="./../Pages/tourisme.html"  class="icon"><i class="fas fa-binoculars"></i><li>Tourisme</li></a>
-          <a href="#sectionContact" class="icon"><i class="fa-solid fa-phone  bb"></i><li>Contact</li></a>
         </uv>
       </div>
+
+       <i class="fas fa-bars humberger" onclick="openMenu()"></i>
+
+       <div class="side-menu" id="sideMenu">
+        <i class="fa-solid fa-xmark close-btn" onclick="closeMenu()"></i>
+        <ul>
+          <a href="./../index.html" class="icon"><i class="fas fa-home"></i><li>Accueil</li></a>
+          <a href="./../Pages/propos.html" class="icon"><i class="fas fa-info-circle"></i><li>A propos</li></a>
+          <a href="#" style="color: rgb(211, 159, 0); transform: scale(1.05);" class="icon"><i class="fas fa-gavel"></i> <li>Administration</li></a>
+          <a href="./../Pages/economie.html" class="icon"><i class="fas fa-coins"></i><li>Economie</li></a>
+          <a href="./../Pages/tourisme.html"  class="icon"><i class="fas fa-binoculars"></i><li>Tourisme</li></a>
+        </ul>
+      </div>
+
+      <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
     </nav>
   </header>
 
   <body class="corp">
-    <div class="province1">
-      <div class="province"></div>
+    <div class="admini">
+      <div class="textAdmini">
+        <h1>Administration</h1>
+        <p>L’administration provinciale du Kasai-central assure la gestion quotidienne des affaires publiques, sous la direction du Gouverneur. Elle veille à l’application des lois, à la bonne gouvernance et à la coordination des services pour répondre efficacement aux besoins de la population. Elle collabore avec les autorités locales et les partenaires pour favoriser le développement de la province.</p>
+      </div>
+      <div class="imgAdmini">
+        <img src="./../tools/img/admin/empty-chairs-tables-courtroom_1048944-27183430.avif">
+      </div>
+    </div>
+
+    <div class="bibliographie">
+      <div class="govener">
+        <div class="imgGovener">
+          <img src="./../tools/img/admin/smiling-mayor-posing-portrait-with-approachable-demeanor-against-light-solid-color-backdrop_1081303-3206.avif">
+        </div>
+
+        <div class="textGovener">
+          <h2>Bibliographie du gouverneur</h2>
+          <p>Monsieur Joseph Moïse Kambulu Nkonko est l’actuel Gouverneur de la Province du Kasaï-Central. Fort d’une expérience solide dans l’administration publique et le développement local, il s’est engagé à promouvoir la stabilité, la bonne gouvernance et le progrès socio-économique dans la province. Diplômé en droit, il a exercé diverses fonctions au sein des institutions provinciales et nationales avant de prendre ses fonctions actuelles. Sous son leadership, la province met l’accent sur l’amélioration des infrastructures, la promotion de l’éducation, la sécurité et le soutien à l’agriculture locale, afin d’assurer un avenir meilleur à ses habitants.</p>
+        </div>
+      </div>
+
+      <div class="other">
+        <div class="vcgovener">
+          <div class="textVcgovener">
+            <h2>Vice-Gouverneur</h2>
+          </div>
+          <div class="imgVcgovener">
+            <img src="./../tools/img/admin/confident-entrepreneur-looking-camera-with-arms-folded-smiling_1098-18840.avif">
+          </div>
+        </div>
+
+        <div class="officiel">
+          <div class="textOfficiel">
+            <h2>Photo officielle</h2>
+          </div>
+          <div class="imgOfficiel">
+            <img src="./../tools/img/admin/7c9437509a54bc73b265eab2ebc54a4f.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="organisation">
       <div class="obscurite"></div>
-      <div class="text_province">
-        <h1>Province de KASAI</h1>
-        <p class="para">slogan</p>
-        <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo, possimus voluptas dignissimos iste architecto impedit voluptatibus at quas aut!</p>
-        <div class="boutton">
-          <a href="./Pages/propos.html"><button >En savoir plus +</button></a>
-          <button >Découvrir la province</button>
-        </div>
-      </div>
-    </div>
-    
-    <div class="carte">
-      <div class="catre1">
-        <div class="admin">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum suscipit ipsum eligendi mollitia distinctio, magni minima quos expedita. Officiis ullam eius aspernatur laboriosam odio nesciunt quasi quos reiciendis. Ipsam, facere.</p>
+      <h2>Organisation administrative</h2>
+      <div class="org">
+        <div class="orga1">
+          <div class="text1orga1">
+            <li>Le Gouverneur et son cabinet</li>
+            <p>Le Gouverneur dirige l’administration provinciale et assure la mise en œuvre des politiques publiques. Il est entouré d’un cabinet qui l’assiste dans la coordination, la gestion des affaires courantes et la supervision des projets de la province.</p>
+          </div>
+          <div class="text2orga1">
+            <li>Les services techniques</li>
+            <p>Ces services apportent un appui technique à l’administration. Ils interviennent notamment dans les domaines des infrastructures, de la sécurité et de l’aménagement du territoire.</p>
+          </div>
         </div>
 
-        <div class="economie">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum suscipit ipsum eligendi mollitia distinctio, magni minima quos expedita. Officiis ullam eius aspernatur laboriosam odio nesciunt quasi quos reiciendis. Ipsam, facere.</p>
-        </div>
-      </div>
-
-      <div class="carte2">
-        <img src="" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sint ad eligendi quo inventore possimus ipsam, quia corrupti, quae facere, impedit eius iure? Doloremque blanditiis in corporis totam nihil. Obcaecati.</p>
-      </div>
-
-      <div class="carte3">
-        <div class="infra">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsa nihil reprehenderit minus veniam. Itaque voluptatem at iste tenetur animi nam, voluptatibus, voluptate a similique eius placeat, amet ab tempora.</p>
-        </div>
-
-        <div class="sante">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos at, quas ex quaerat tempore velit corporis explicabo aperiam? Illum sed corporis mollitia. Nulla eos magni nihil reiciendis. Facilis, assumenda nam!</p>
+        <div class="orga2">
+          <div class="text1orga2">
+            <li>Les administrations territoriales</li>
+            <p>Les territoires, secteurs et chefferies assurent la gestion locale. Elles permettent une gouvernance de proximité et facilitent la coordination entre les communautés et l’administration provinciale.</p>
+          </div>
+          <div class="text2orga2">
+            <li>Les divisions provinciales</li>
+            <p>Les divisions sont des services spécialisés comme la santé, l’éducation ou l’agriculture. Elles exécutent les politiques publiques et assurent le lien entre les autorités provinciales et les citoyens.</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="actualite">
-      <div class="grilles">
-        <div class="grille">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit dolores molestias reprehenderit ullam, temporibus illo tempora doloribus similique ea vitae quae maxime fuga cupiditate iste nesciunt reiciendis, mollitia nihil.</p>
+    <div class="service">
+      <h2>Services et directions provinciales</h2>
+      <div class="carteService">
+        <div class="carte c1">
+          <div class="imgCarte">
+            <img src="./../tools/img/admin/african-american-female-doctor-examining-girl-patient-using-stethoscope-hospital-hospital-medicine-healthcare-unaltered_13339-336778.avif">
+          </div>
+          <div class="textCarte">
+            <div class="courte">
+              <img src="./../tools/img/admin/african-american-female-doctor-examining-girl-patient-using-stethoscope-hospital-hospital-medicine-healthcare-unaltered_13339-336778.avif">
+              <h3>Santé</h3>
+            </div>
+            <p>La direction de la santé veille à offrir des services médicaux de qualité et à promouvoir la prévention des maladies dans toute la province.</p>
+          </div>
         </div>
 
-        <div class="grille">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit dolores molestias reprehenderit ullam, temporibus illo tempora doloribus similique ea vitae quae maxime fuga cupiditate iste nesciunt reiciendis, mollitia nihil.</p>
+        <div class="carte c2">
+          <div class="imgCarte">
+            <img src="./../tools/img/admin/scenic-view-grassy-field-against-sky_1048944-29518080.avif">
+          </div>
+          <div class="textCarte">
+            <div class="courte">
+              <img src="./../tools/img/admin/scenic-view-grassy-field-against-sky_1048944-29518080.avif">
+              <h3>Agriculture</h3>
+            </div>
+            <p>Le service agricole soutient les agriculteurs locaux pour améliorer la production et assurer la sécurité alimentaire.</p>
+          </div>
         </div>
 
-        <div class="grille">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit dolores molestias reprehenderit ullam, temporibus illo tempora doloribus similique ea vitae quae maxime fuga cupiditate iste nesciunt reiciendis, mollitia nihil.</p>
+        <div class="carte c3">
+          <div class="imgCarte">
+            <img src="./../tools/img/admin/african-kid-enjoying-life_23-2151448104.avif">
+          </div>
+           <div class="textCarte">
+            <div class="courte">
+              <img src="./../tools/img/admin/african-kid-enjoying-life_23-2151448104.avif">
+              <h3>Education</h3>
+            </div>
+            <p>La direction de l’éducation travaille à garantir l’accès à une instruction de qualité pour tous les enfants de la province.</p>
+          </div>
         </div>
 
-        <div class="grille">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit dolores molestias reprehenderit ullam, temporibus illo tempora doloribus similique ea vitae quae maxime fuga cupiditate iste nesciunt reiciendis, mollitia nihil.</p>
-        </div>
-
-        <div class="grille">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit dolores molestias reprehenderit ullam, temporibus illo tempora doloribus similique ea vitae quae maxime fuga cupiditate iste nesciunt reiciendis, mollitia nihil.</p>
-        </div>
-
-        <div class="grille">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit dolores molestias reprehenderit ullam, temporibus illo tempora doloribus similique ea vitae quae maxime fuga cupiditate iste nesciunt reiciendis, mollitia nihil.</p>
+        <div class="carte c4">
+          <div class="imgCarte">
+            <img src="./../tools/img/admin/high-angle-view-stream-flowing-amidst-trees-forest_1048944-23419259.avif">
+          </div>
+           <div class="textCarte">
+            <div class="courte">
+              <img src="./../tools/img/admin/high-angle-view-stream-flowing-amidst-trees-forest_1048944-23419259.avif">
+              <h3>Environnement</h3>
+            </div>
+            <p>Le service de l’environnement protège les ressources naturelles et encourage des pratiques durables pour préserver la province.</p>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="btn">
-        <button>Voir toutes les actualités</button>
+    <div class="transparence">
+      <div class="obscurite"></div>
+      <h2>Transparence et Gouvernance</h2>
+      <div class="textTransparence">
+        <div class="transaparenc">
+          <li>Rapports d'activités</li>
+          <p>Les rapports d’activité montrent clairement ce que fait l’administration, les résultats obtenus et les ressources utilisées. Ils permettent aux citoyens de suivre les actions du gouvernement et de vérifier que les engagements sont respectés.</p>
+        </div>
+
+        <div class="transparence1">
+          <li>Projets publics en cours</li>
+          <p>La province informe régulièrement la population sur les projets en cours, comme les infrastructures ou les programmes sociaux. Cela permet de suivre leur avancement et d’assurer une gestion transparente des ressources.</p>
+        </div>
+
+        <div class="transparence1">
+          <li>Audits et évaluation</li>
+          <p>Des audits indépendants sont réalisés pour contrôler la bonne utilisation des fonds publics. Ils aident à améliorer la gestion et à garantir que les actions menées profitent réellement à la population.</p>
+        </div>
       </div>
     </div>
 
-    <div class="galerie">
+    <script src="./../Script.js"></script>
 
-    </div>
-
-    <div id="sectionContact" class="contact">
-      contact
-    </div>
   </body>
 
-   <footer>
-   <div class="pied">
+  <footer>
+    <div class="pied">
       <div class="titrePied">
-        
-         <div>
-          <h4>A propos de la province</h4>
-          <uv class="classe">
-            <li>Histoire de la province</li>
-            <li>Carte géographique</li>
-            <li>Population & culutures</li>
-            <li>Symboles officiels</li>
-          </uv>
-        </div>
-
-         <div>
+        <div>
           <h4>Institutions provinciales</h4>
           <uv class="classe">
             <li>Gouvernorat</li>
@@ -143,12 +210,22 @@
           </uv>
         </div>
 
-         <div>
+        <div>
+          <h4>Liens rapides</h4>
+          <uv class="classe">
+            <a href="./../index.html"><li>Accueil</li></a>
+            <a href="./../Pages/propos.html"><li>A propos</li></a>
+            <a href="./../Pages/economie.html"><li>Economie</li></a>
+            <a href="./../Pages/tourisme.html"><li>Tourisme</li></a>
+          </uv>
+        </div>
+
+        <div>
           <h4>Contact</h4>
           <uv class="classe">
             <a href="https://www.google.com/maps/place/Kasa%C3%AF-Central/@-6.0410388,19.9361622,7z/data=!3m1!4b1!4m6!3m5!1s0x1a275db9ffe74dad:0x4a32c705450e287b!8m2!3d-6.2514921!4d22.2384017!16s%2Fg%2F11bx55x219?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="footerIcon"><i class="fas fa-location-dot"></i><li>RDC,kasai-central</li></a>
-            <a href="#" class="footerIcon"><i class="fas fa-phone"></i><li>+243 993434727</li></a>
-            <a href="#" class="footerIcon"><i class="fas fa-envelope"></i><li>kasaicentral@gmail.cd</li></a>
+            <a href="https://wa.me/243993434727" target="_blank" class="footerIcon"><i class="fab fa-whatsapp"></i><li>+243 993434727</li></a>
+            <a href="mailto:amanimusafiri2007@gmail.com" target="_blank" class="footerIcon"><i class="fas fa-envelope"></i><li>kasaicentral-rdc@gmail.cd</li></a>
           </uv>
         </div>
 
@@ -157,7 +234,6 @@
           <uv class="classe">
             <a href="#" classe="footerIcon"><i class="fab fa-facebook"></i><li>Facebook</li></a>
             <a href="#" classe="footerIcon"><i class="fab fa-youtube"></i><li>Youtube</li></a>
-            <a href="#" classe="footerIcon"><i class="fab fa-whatsapp"></i><li>WhastApp</li></a>
             <a href="#" classe="footerIcon"><i class="fab fa-x-twitter"></i><li>X(Twitter)</li></a>
             <a href="#" classe="footerIcon"><i class="fab fa-instagram"></i><li>Instagram</li></a>
           </uv>
@@ -170,8 +246,5 @@
       </div>
     </div>
   </footer>
-  
-  <link rel="stylesheet" href="./../tools/css/style_admin.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </body>
 </html>

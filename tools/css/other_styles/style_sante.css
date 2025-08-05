@@ -1,0 +1,439 @@
+*{
+  font-family: poppins, sans-serif;
+}
+
+html{
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a{
+  font-size: 17px;
+  text-decoration: none;
+  color:  rgb(75, 241, 86);
+}
+a:hover{
+  color: rgb(211, 159, 0);
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  z-index: 1000;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+}
+.entete{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  z-index: 1000;
+  border-bottom: 1px solid rgb(0, 169, 11);
+}
+
+.boutton{
+  position: absolute;
+  left: 20px;
+}
+.boutton button{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3px 10px 5px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+}
+.boutton button:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.142);
+}
+.boutton button:active{
+  opacity: 0.8;
+}
+.titreSante h1{
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(42, 196, 53);
+  margin: 0;
+}
+@media(max-width:600px){
+  .titreSante h1{
+    font-size: 25px;
+  }
+}
+
+body{
+  margin-top: 91px;
+}
+
+.sante h2{
+  font-size: 30px;
+  color: rgb(211, 159, 0);
+  margin-bottom: -5px;
+  padding-left: 10px;
+  border-left: 3px solid rgb(211, 159, 0);
+  margin-left: 20px;
+}
+.sante p{
+  font-size: 18px;
+}
+
+.sante1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border: 1px solid rgb(0, 169, 11);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  margin: 0 30px 0 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.imgSante{
+  height: 360px;
+}
+.imgSante img{
+  height: 100%;
+  width: auto;
+  border-radius: 5px;
+}
+
+@media(max-width:896px){
+  .sante1{
+    display: flex;
+    flex-direction:column;
+  }
+  .imgSante{
+    height: auto;
+  }
+  .imgSante img{
+    height: auto;
+    width: 100%;
+  }
+}
+
+.infraPer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  z-index: 1;
+}
+
+.infra{
+  padding-bottom: 20px;
+  padding-top: 30px;
+  position: relative;
+  width: 100%;
+  background-image: url(./../../img/education/9a50318a5ad9ca300c2930bc9df4f9a1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  gap: 20px;
+  z-index: 1;
+  min-height: 200px;
+}
+
+
+.infra h3{
+  position: relative;
+  z-index: 2;
+  color: rgb(75, 241, 86);
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 4px solid rgb(75, 241, 86);
+  margin-top: -10px;
+
+}
+
+.infra p{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  color: white;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.obscurite{
+  border-radius: 5px;
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.409);
+  z-index: 2;
+}
+
+.per{
+  background-image: url(./../../img/education/portrait-african-american-woman-working-as-doctor_482257-10153.avif);
+}
+
+.pro{
+  display: flex;
+  justify-content: start;
+  min-height: 330px;
+  flex: 1;
+  background-image: url(./../../img/education/african-american-man-woman-talking-girl-hospital-ward-about-healing-treatment-diagnosis-doctors-examining-sick-young-patient-with-cervical-neck-collar-sitting-bed_482257-16515.avif);
+}
+
+.urg{
+  flex: 2;
+  background-image: url(./../../img/education/f44931f9d6ac79e52640453f6fb36e4d.jpg);
+}
+
+.textInfra1{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  color: white;
+  font-size: 17px;
+  padding-left: 20px;
+}
+.textInfra1 li{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media(max-width:760px){
+  .infraPer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .infra{
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width:1054px){
+  .urgence{
+    display: flex;
+    flex-direction: column;
+  }
+  .pro{
+    min-height: 150px;
+  }
+}
+
+@media(max-width:745px){
+  .urg .textInfra1{
+    display: flex;
+    flex-direction: column;
+  }
+  .urg .transparence1{
+    border: none;
+  }
+}
+
+.transparence1{
+  border-left: 1px solid white;
+  padding-left: 5px;
+}
+
+.education h3{
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(0, 169, 11);
+}
+.education .p{
+  margin:0 60px 0 60px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;margin-bottom: 30px;
+}
+
+.carte{
+  padding: 5px;
+  border: 1px solid rgb(0, 169, 11);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  width: 340px;
+  transition: transform 0.6s ease;
+}
+.carte:hover{
+  transform: translateY(-12px);
+}
+
+.imgCarte{
+  height: 320px;
+  padding: 0;
+}
+
+.imgCarte img{
+  height: 320px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.courte{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.courte img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.textCarte h3{
+  color: rgb(0, 169, 11);
+  font-size: 20px;
+  padding-right: 5px;
+}
+.textCarte p{
+  margin-top: -10px;
+  font-size: 18px;
+}
+
+@media(max-width:960px){
+  .container,.education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+footer{
+  margin: -10px !important;
+}
+
+.footerIcon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgb(209, 209, 209);
+}
+
+@media(max-width:1000px){
+  .titrePied{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 40px !important;
+   font-size: 25px;
+  }
+  .titrePied div h4,.classe li,.legal{
+    font-size: 25px !important;
+  }
+}
+@media(max-width:730px){
+  .titrePied{  
+    font-size: 18px;
+  }
+  .titrePied div h4,.classe li,.legal{
+    font-size: 18px !important;
+  }
+}
+
+.pied{
+  background-color: rgb(7, 7, 72);
+  color: rgba(211, 158, 0, 0.726);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 18px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.titrePied{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 10px;
+}
+
+.titrePied div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titrePied div h4{
+  color: rgb(255, 255, 255);
+}
+.classe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(209, 209, 209);
+}
+
+.classe li{
+  padding: 5px;
+}
+.classe a{
+  color:rgb(209, 209, 209);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.classe a:hover{
+  color: white;
+}
+
+
+.legal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid rgb(75, 75, 78);
+}
+.legal p{
+   color: rgb(209, 209, 209);
+}

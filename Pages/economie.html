@@ -5,136 +5,175 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Economie</title>
    <link rel="shortcut icon" href="./../tools/img/logo/Gemini_Generated_Image_bxn9chbxn9chbxn9-removebg-preview.png">
+  <link rel="stylesheet" href="./../tools/css/style_economie.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
      <nav class="navBar">
       <div class="logo">
        <img src="./../tools/img/logo/Gemini_Generated_Image_bxn9chbxn9chbxn9-removebg-preview.png">
-       <i class="fa-solid fa-house"></i><p>Kasai-central</p>
+       <p>Kasai-central</p>
       </div>
       
-      <div class="nav_info">
+      <div class="nav_info" id="navInfo">
          <uv class="infoBar">
           <a href="./../index.html" class="icon"><i class="fas fa-home"></i><li>Accueil</li></a>
           <a href="./../Pages/propos.html" class="icon"><i class="fas fa-info-circle"></i><li>A propos</li></a>
           <a href="./../Pages/admin.html" class="icon"><i class="fas fa-gavel"></i> <li>Administration</li></a>
           <a href="#" style="color: rgb(211, 159, 0); transform: scale(1.05);" class="icon"><i class="fas fa-coins"></i><li>Economie</li></a>
           <a href="./../Pages/tourisme.html" class="icon"><i class="fas fa-binoculars"></i><li>Tourisme</li></a>
-          <a href="#sectionContact" class="icon"><i class="fa-solid fa-phone  bb"></i><li>Contact</li></a>
         </uv>
       </div>
+
+       <i class="fas fa-bars humberger" onclick="openMenu()"></i>
+
+       <div class="side-menu" id="sideMenu">
+        <i class="fa-solid fa-xmark close-btn" onclick="closeMenu()"></i>
+        <ul>
+          <a href="./../index.html" class="icon"><i class="fas fa-home"></i><li>Accueil</li></a>
+          <a href="./../Pages/propos.html" class="icon"><i class="fas fa-info-circle"></i><li>A propos</li></a>
+          <a href="./../Pages/admin.html" class="icon"><i class="fas fa-gavel"></i> <li>Administration</li></a>
+          <a href="#" style="color: rgb(211, 159, 0); transform: scale(1.05);" class="icon"><i class="fas fa-coins"></i><li>Economie</li></a>
+          <a href="./../Pages/tourisme.html" class="icon"><i class="fas fa-binoculars"></i><li>Tourisme</li></a>
+        </ul>
+      </div>
+
+      <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
     </nav>
   </header>
 
   <body class="corp">
-    <div class="province1">
-      <div class="province"></div>
+    <div class="economie">
+      <div class="textEconomie">
+        <h1>Economie</h1>
+        <p>L’économie de la province s’appuie sur ses ressources naturelles et la vitalité de ses habitants. Entre agriculture, commerce, artisanat et exploitation minière, les activités se diversifient et soutiennent le développement local. La province se positionne ainsi comme un acteur clé dans la croissance régionale.</p>
+      </div>
+      <div class="imgEconomie">
+        <img src="./../tools/img/economie/city-growth-finance_968957-19645.avif">
+      </div>
+    </div>
+
+    <div class="ressource">
+      <h2>Ressources naturelles</h2>
+      <div class="ressource1">
+        <div class="mine">
+          <div class="imgMine">
+            <img src="./../tools/img/economie/two-african-mine-workers-are-discussing-maintenance-large-haul-dump-truck_875825-73192.avif">
+          </div>
+          <div class="textMine">
+            <h3>Le Diament</h3>
+            <p>Le diamant est la principale richesse minière du Kasaï-Central. Présent notamment dans la région de Lulua, il est exploité surtout de manière artisanale. Malgré la baisse de production, il reste un atout économique important pour la province, avec un potentiel de développement si l’exploitation est mieux encadrée.</p>
+          </div>
+        </div>
+
+        <div class="mine">
+          <div class="imgMine">
+            <img src="./../tools/img/economie/person-is-holding-gold-coin-their-hand_41404-1246.avif">
+          </div>
+          <div class="textMine">
+            <h3>L'Or</h3>
+            <p>Le Kasaï-Central possède des gisements d’or encore peu exploités, souvent travaillés de façon artisanale par des communautés locales. Bien que moins connus que les diamants, ces gisements représentent une ressource prometteuse, pouvant contribuer au développement économique si des efforts d’encadrement et d’investissement sont mis en place.</p>
+          </div>
+        </div>
+
+        <div class="mine">
+          <div class="imgMine">
+            <img src="./../tools/img/economie/man-stands-front-pile-coal_1109006-129457.avif">
+          </div>
+          <div class="textMine">
+            <h3>Le Manganèse</h3>
+            <p>Le manganèse est présent dans plusieurs zones du Kasaï-Central, bien que son exploitation reste encore très limitée. Ce minerai, utilisé principalement dans la fabrication de l’acier et des batteries, représente un potentiel économique important pour l’avenir de la province, surtout en cas de développement industriel adapté.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ressource">
+      <h2>Agriculture</h2>
+      <div class="ressource1">
+        <div class="mine">
+          <div class="imgMine">
+            <img src="./../tools/img/economie/machine-working-peanut-field-blue-sky-agriculture_70216-5451.avif">
+          </div>
+          <div class="textMine">
+            <h3>Un fort potentiel de modernisation</h3>
+            <p>L’agriculture au Kasaï-Central reste majoritairement traditionnelle et peu mécanisée, ce qui limite sa productivité. Avec des investissements dans les outils modernes, les infrastructures et la formation des agriculteurs, ce secteur pourrait se développer rapidement et devenir un moteur important de l’économie locale.</p>
+          </div>
+        </div>
+
+        <div class="mine">
+          <div class="imgMine">
+            <img src="./../tools/img/economie/countryside-woman-holding-plant-leaves_23-2148761766.avif">
+          </div>
+          <div class="textMine">
+            <h3>Agriculture, moteur de l’économie locale</h3>
+            <p>L’agriculture constitue la principale activité économique pour la majorité des habitants du Kasaï-Central. Elle assure l’approvisionnement alimentaire des ménages tout en générant des revenus essentiels, notamment grâce aux cultures vivrières et commerciales pratiquées dans la province.</p>
+          </div>
+        </div>
+
+        <div class="mine">
+          <div class="imgMine">
+            <img src="./../tools/img/economie/male-farmer-who-is-using-shovel-dig-soil-his-rice-fields_1150-17239.avif">
+          </div>
+          <div class="textMine">
+            <h3>Sols fertiles et climat favorable</h3>
+            <p>Le Kasaï-Central bénéficie de sols riches et d’un climat tropical humide, idéaux pour la culture de nombreuses plantes. Ces conditions naturelles permettent la production diversifiée de cultures comme le manioc, le maïs, l’arachide et plusieurs légumes, favorisant ainsi la sécurité alimentaire et l’économie locale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="industrie">
       <div class="obscurite"></div>
-      <div class="text_province">
-        <h1>Province de KASAI</h1>
-        <p class="para">slogan</p>
-        <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo, possimus voluptas dignissimos iste architecto impedit voluptatibus at quas aut!</p>
-        <div class="boutton">
-          <a href="./Pages/propos.html"><button >En savoir plus +</button></a>
-          <button >Découvrir la province</button>
-        </div>
-      </div>
-    </div>
-    
-    <div class="carte">
-      <div class="catre1">
-        <div class="admin">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum suscipit ipsum eligendi mollitia distinctio, magni minima quos expedita. Officiis ullam eius aspernatur laboriosam odio nesciunt quasi quos reiciendis. Ipsam, facere.</p>
+      <h2>Industries</h2>
+      <div class="textIndustrie">
+        <div class="transaparenc">
+          <li>Industrie minière</li>
+          <p>Le Kasaï-Central possède des gisements de diamants, d’or et de manganèse. L’exploitation reste surtout artisanale, mais un développement industriel structuré pourrait mieux valoriser ces ressources et créer des emplois durables.</p>
         </div>
 
-        <div class="economie">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum suscipit ipsum eligendi mollitia distinctio, magni minima quos expedita. Officiis ullam eius aspernatur laboriosam odio nesciunt quasi quos reiciendis. Ipsam, facere.</p>
-        </div>
-      </div>
-
-      <div class="carte2">
-        <img src="" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sint ad eligendi quo inventore possimus ipsam, quia corrupti, quae facere, impedit eius iure? Doloremque blanditiis in corporis totam nihil. Obcaecati.</p>
-      </div>
-
-      <div class="carte3">
-        <div class="infra">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsa nihil reprehenderit minus veniam. Itaque voluptatem at iste tenetur animi nam, voluptatibus, voluptate a similique eius placeat, amet ab tempora.</p>
+        <div class="transparence1">
+          <li>Industrie agroalimentaire</li>
+          <p>La transformation des produits agricoles comme le manioc, le maïs et l’arachide se développe, fournissant des aliments finis pour les marchés locaux et nationaux, ce qui renforce la sécurité alimentaire et l’économie.</p>
         </div>
 
-        <div class="sante">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos at, quas ex quaerat tempore velit corporis explicabo aperiam? Illum sed corporis mollitia. Nulla eos magni nihil reiciendis. Facilis, assumenda nam!</p>
+        <div class="transparence1">
+          <li>Petites et moyennes industries locales</li>
+          <p>Les petites et moyennes industries, notamment dans les matériaux de construction et l’artisanat, contribuent à diversifier l’économie et à créer des emplois dans la province.</p>
         </div>
       </div>
     </div>
 
-    <div class="actualite">
-      <div class="grilles">
-        <div class="grille">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit dolores molestias reprehenderit ullam, temporibus illo tempora doloribus similique ea vitae quae maxime fuga cupiditate iste nesciunt reiciendis, mollitia nihil.</p>
+    <div class="commerce">
+      <div class="obscurite"></div>
+      <h2>Commerce</h2>
+      <div class="textIndustrie">
+        <div class="transaparenc">
+          <li>Commerce local dynamique</li>
+          <p>Le commerce constitue l’un des secteurs les plus actifs de la province. Il repose principalement sur les échanges de produits agricoles, artisanaux et de consommation courante, notamment dans les marchés urbains et ruraux.</p>
         </div>
 
-        <div class="grille">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit dolores molestias reprehenderit ullam, temporibus illo tempora doloribus similique ea vitae quae maxime fuga cupiditate iste nesciunt reiciendis, mollitia nihil.</p>
+        <div class="transparence1">
+          <li> Échanges interprovinciaux</li>
+          <p>Grâce à sa position géographique centrale, le Kasaï-Central entretient des échanges commerciaux avec plusieurs provinces voisines, favorisant la circulation des biens et soutenant l’économie régionale.</p>
         </div>
 
-        <div class="grille">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit dolores molestias reprehenderit ullam, temporibus illo tempora doloribus similique ea vitae quae maxime fuga cupiditate iste nesciunt reiciendis, mollitia nihil.</p>
-        </div>
-
-        <div class="grille">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit dolores molestias reprehenderit ullam, temporibus illo tempora doloribus similique ea vitae quae maxime fuga cupiditate iste nesciunt reiciendis, mollitia nihil.</p>
-        </div>
-
-        <div class="grille">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit dolores molestias reprehenderit ullam, temporibus illo tempora doloribus similique ea vitae quae maxime fuga cupiditate iste nesciunt reiciendis, mollitia nihil.</p>
-        </div>
-
-        <div class="grille">
-          <img src="" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit dolores molestias reprehenderit ullam, temporibus illo tempora doloribus similique ea vitae quae maxime fuga cupiditate iste nesciunt reiciendis, mollitia nihil.</p>
+        <div class="transparence1">
+          <li>Potentiel d’expansion commerciale</li>
+          <p>Le secteur commercial présente un fort potentiel de croissance. Avec l’amélioration des infrastructures routières et du soutien aux entrepreneurs, le commerce pourrait se professionnaliser davantage et attirer de nouveaux investisseurs.</p>
         </div>
       </div>
-
-      <div class="btn">
-        <button>Voir toutes les actualités</button>
-      </div>
     </div>
 
-    <div class="galerie">
-
-    </div>
-
-    <div id="sectionContact" class="contact">
-      contact
-    </div>
+    <script src="./../Script.js"></script>
   </body>
 
-<footer>
- <div class="pied">
+  <footer>
+    <div class="pied">
       <div class="titrePied">
-        
-         <div>
-          <h4>A propos de la province</h4>
-          <uv class="classe">
-            <li>Histoire de la province</li>
-            <li>Carte géographique</li>
-            <li>Population & culutures</li>
-            <li>Symboles officiels</li>
-          </uv>
-        </div>
-
-         <div>
+        <div>
           <h4>Institutions provinciales</h4>
           <uv class="classe">
             <li>Gouvernorat</li>
@@ -143,12 +182,22 @@
           </uv>
         </div>
 
-         <div>
+        <div>
+          <h4>Liens rapides</h4>
+          <uv class="classe">
+            <a href="./../index.html"><li>Accueil</li></a>
+            <a href="./../Pages/propos.html"><li>A propos</li></a>
+            <a href="./../Pages/admin.html"><li>Administration</li></a>
+            <a href="./../Pages/tourisme.html"><li>Tourisme</li></a>
+          </uv>
+        </div>
+
+        <div>
           <h4>Contact</h4>
           <uv class="classe">
             <a href="https://www.google.com/maps/place/Kasa%C3%AF-Central/@-6.0410388,19.9361622,7z/data=!3m1!4b1!4m6!3m5!1s0x1a275db9ffe74dad:0x4a32c705450e287b!8m2!3d-6.2514921!4d22.2384017!16s%2Fg%2F11bx55x219?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="footerIcon"><i class="fas fa-location-dot"></i><li>RDC,kasai-central</li></a>
-            <a href="#" class="footerIcon"><i class="fas fa-phone"></i><li>+243 993434727</li></a>
-            <a href="#" class="footerIcon"><i class="fas fa-envelope"></i><li>kasaicentral@gmail.cd</li></a>
+            <a href="https://wa.me/243993434727" target="_blank" class="footerIcon"><i class="fab fa-whatsapp"></i><li>+243 993434727</li></a>
+            <a href="mailto:amanimusafiri2007@gmail.com" target="_blank" class="footerIcon"><i class="fas fa-envelope"></i><li>kasaicentral-rdc@gmail.cd</li></a>
           </uv>
         </div>
 
@@ -157,7 +206,6 @@
           <uv class="classe">
             <a href="#" classe="footerIcon"><i class="fab fa-facebook"></i><li>Facebook</li></a>
             <a href="#" classe="footerIcon"><i class="fab fa-youtube"></i><li>Youtube</li></a>
-            <a href="#" classe="footerIcon"><i class="fab fa-whatsapp"></i><li>WhastApp</li></a>
             <a href="#" classe="footerIcon"><i class="fab fa-x-twitter"></i><li>X(Twitter)</li></a>
             <a href="#" classe="footerIcon"><i class="fab fa-instagram"></i><li>Instagram</li></a>
           </uv>
@@ -170,8 +218,5 @@
       </div>
     </div>
   </footer>
-  
-  <link rel="stylesheet" href="./../tools/css/style_economie.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </body>
 </html>

@@ -12,7 +12,7 @@ html{
 a{
   font-size: 17px;
   text-decoration: none;
-  color: rgb(75, 241, 86);
+  color: rgb(0, 169, 11);
 }
 a:hover{
 
@@ -68,12 +68,531 @@ a:hover{
   justify-content: end;
 }
 
+.humberger{
+  display: none !important;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+  color: rgb(0, 169, 11);
+  padding: 10px;
+  border-radius: 6px;
+  z-index: 1100;
+}
+.humberger:hover{
+  background-color: rgba(0, 0, 0, 0.29);
+}
+
+.side-menu{
+  position: fixed;
+  top:80px;
+  right: -250px;
+  height: 260px;
+  width: 220px;
+  color: rgb(0, 169, 11);
+  background-color: white;
+  transition: right 0.3s ease-in-out;
+  z-index: 1001;
+  padding-top: 40px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid rgb(0, 169, 11);
+}
+.side-menu.active{
+  right: 0;
+}
+.side-menu ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.side-menu ul .icon{
+  display: flex;
+  justify-content: start;
+  padding-left: 30px;
+}
+.side-menu li{
+  padding: 15px 20px;
+}
+
+.close-btn{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 22px;
+  color:black;
+  padding: 8px;
+  border-radius: 8px;
+}
+.close-btn:hover{
+   cursor: pointer;
+   background-color: rgba(0, 0, 0, 0.24);
+}
+.overlay{
+  position: fixed;
+  top: 0;
+  right:8px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1000;
+}
+.overlay.show{
+  display: block;
+}
+@media (max-width: 995px){
+  .nav_info{
+    display:none !important;
+  }
+  .humberger{
+    display: block !important;
+  }
+  .text_province h1{
+  font-size: 50px !important;
+  }
+  .side-menu{
+    display: block;
+  }
+}
+@media(min-width:995px){
+  .side-menu,.overlay{
+    display: none !important;
+  }
+}
+.nav_info.show{
+  display: flex;
+}
+
 .icon{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 6px;
+}
+
+.tour{
+  margin-top: 0;
+  padding-top: 165px;
+  padding-bottom: 165px;
+  background-image: url(./../img/tourisme/deer-standing-field_1048944-13712385.jpg);
+  border-radius: 0 0 5px 5px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  margin-bottom: 30px;
+}
+.tour1 {
+ margin-left: 40px;
+}
+.tour1 h1{
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(0, 169, 11);
+  animation: entree 1.5s ease forwards;
+}
+@keyframes entree {
+  from{
+    opacity: 0;
+    transform:translate(25px);    
+  }
+  to{
+    opacity: 1;
+    transform: translate(0);
+   
+  }
+}
+@media(max-width:875px){
+  .tour1 h1{
+    font-size: 30px;
+  }
+  .tour1{
+    margin: 0;
+    padding: 10px;
+  }
+}
+.tour1 p{
+  font-size: 20px;
+  border: 1px solid rgb(211, 159, 0);
+  border-radius: 20px;
+  padding: 0 40px 0 40px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+
+.culture{
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.culture h2{
+  font-size: 30px;
+  color: rgb(211, 159, 0);
+  margin-bottom: -5px;
+  padding-left: 10px;
+  border-left: 3px solid rgb(211, 159, 0);
+  margin-left: 20px;
+}
+
+.patriArti{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.patrimoine{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-left: 40px;
+  border: 1px solid rgb(0, 169, 11);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.imgPatrimoine{
+  height: 320px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.imgPatrimoine img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+}
+.imgPatrimoine:hover img{
+  transform: scale(1.03);
+}
+
+.textPatrimoine h3{
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(0, 169, 11);
+}
+.textPatrimoine p{
+  font-size: 18px;
+  margin-top: -5px;
+}
+
+.Artisanat{
+  border: 1px solid rgb(0, 169, 11);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-right: 40px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.imgArtisanat{
+  height: 320px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.imgArtisanat img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+}
+.imgArtisanat:hover img{
+  transform: scale(1.05);
+}
+
+.textArtisanat h3{
+  font-weight: bold;
+  font-size:25px;
+  color: rgb(0, 169, 11);
+}
+.textArtisanat p{
+  font-size: 18px;
+  margin-top: -5px;
+}
+@media(max-width:745px){
+  .patriArti{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .patrimoine,.Artisanat{
+    margin: 0;
+  }
+}
+
+.evenement{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border: 1px solid rgb(0, 169, 11);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.imgEvenement img{
+  height: 380px;
+  width: auto;
+  border-radius: 5px;
+}
+.textEvenement h3{
+  font-weight: bold;
+  font-size:25px;
+  color: rgb(0, 169, 11);
+} 
+.textEvenement p{
+  font-size: 18px;
+}
+@media(max-width:1145px){
+  .evenement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .evenement img{
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+
+.tourisme{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.tourisme h2{
+  font-size: 30px;
+  color: rgb(211, 159, 0);
+  margin-bottom:-1px;
+  padding-left: 10px;
+  border-left: 3px solid rgb(211, 159, 0);
+  margin-left: 20px;
+}
+
+.sites h3{
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(0, 169, 11);
+  margin-left: 10px;
+}
+@media(min-width:1325px){
+  .sites h3{
+    margin-left: 40px;
+  }
+  .serTour h3{
+    margin-left: 40px;
+  }
+}
+
+.chute{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media(max-width:1185px){
+ .chute{
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+ } 
+ .chute1{
+  width: 100% !important;
+ }
+ .imgChute1{
+  height: auto !important;
+width: 100% !important;
+ }
+ .imgChute1 img{
+  height: auto !important;
+  width: 100% !important;
+ }
+}
+
+.chute1{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(0, 169, 11);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  width: 360px;
+  transition: transform 0.5s ease;
+}
+.chute1:hover{
+  transform: translateY(-15px);
+}
+
+.imgChute1{
+  height: 400px;
+  width: 360px;
+}
+.imgChute1 img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.textChute1 h4{
+  font-size: 20px;
+  color: rgb(0, 169, 11);
+}
+.textChute1 p{
+  font-size: 18px;
+}
+
+.forest{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.forest1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:50px;
+}
+@media(max-width:1085px){
+  .forest1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .forestA{
+    width: 100% !important;
+  }
+  .imgForestA{
+    width: 100% !important;
+  }
+  .imgForestA img{
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+
+.forestA{
+  padding: 5px;
+  border: 1px solid rgb(0, 169, 11);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  width: 500px;
+}
+.imgForestA{
+  width: 500px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.imgForestA img{
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+}
+.imgForestA:hover img{
+  transform: scale(1.03);
+}
+
+.textForestA h4{
+  font-size: 20px;
+  color: rgb(0, 169, 11);
+}
+.textForestA p{
+  font-size: 18px;
+}
+
+.serTour{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.serTour h3{
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(0, 169, 11);
+  margin-left: 10px !important;
+}
+.serTour1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+@media(max-width:1030px){
+  .serTour1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hotel{
+    height: auto  !important;
+    width: 100% !important;
+  }
+  .imgHotel{
+    height: auto  !important;
+  }
+  .imgHotel img{
+    height: auto  !important;
+    width: 100% !important;
+  }
+}
+
+.hotel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid rgb(0, 169, 11);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease-in-out;
+}
+.hotel:hover{
+  transform: translateY(-15px);
+}
+.imgHotel{
+  height: 400px;
+}
+.imgHotel img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.textHotel .porto{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -20px;
+}
+.porto img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.porto h4{
+  font-size: 20px;
+  color: rgb(0, 169, 11);
+}
+.textHotel p{
+  font-size: 18px;
+}
+
+footer{
+  margin: -10px !important;
 }
 
 .footerIcon{
@@ -84,20 +603,39 @@ a:hover{
   color: rgb(209, 209, 209);
 }
 
+@media(max-width:1000px){
+  .titrePied{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 40px !important;
+    font-size: 25px;
+  }
+  .titrePied div h4,.classe li,.legal{
+    font-size: 25px !important;
+  }
+}
+@media(max-width:730px){
+  .titrePied{  
+    font-size: 18px;
+  }
+  .titrePied div h4,.classe li,.legal{
+    font-size: 18px !important;
+  }
+}
 
 .pied{
   background-color: rgb(7, 7, 72);
   color: rgba(211, 158, 0, 0.726);
   width: 100%;
-  height: 310px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   list-style: none;
   font-size: 18px;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .titrePied{

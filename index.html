@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Province de Kasai</title>
+  <title>Province de Kasai-central</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="shortcut icon" href="./tools/img/logo/Gemini_Generated_Image_bxn9chbxn9chbxn9-removebg-preview.png">
+   <link rel="stylesheet" href="./tools/css/style_accueil.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
@@ -14,16 +17,31 @@
        <p>Kasai-central</p>
       </div>
       
-      <div class="nav_info">
-         <uv class="infoBar">
+      <div class="nav_info" id="navInfo">
+         <ul class="infoBar">
           <a href="#" class="icon" style="color:rgb(211, 159, 0); transform: scale(1.05);"><i class="fas fa-home"></i><li>Accueil</li></a>
           <a href="./Pages/propos.html" class="icon"><i class="fas fa-info-circle"></i><li>A propos</li></a>
           <a href="./Pages/admin.html" class="icon"><i class="fas fa-gavel"></i> <li>Administration</li></a>
           <a href="./Pages/economie.html" class="icon"><i class="fas fa-coins"></i><li>Economie</li></a>
           <a href="./Pages/tourisme.html" class="icon"><i class="fas fa-binoculars"></i><li>Tourisme</li></a>
-          <a href="#sectionContact" class="icon"><i class="fa-solid fa-phone  bb"></i><li>Contact</li></a>
-        </uv>
+        </ul>
       </div>
+
+      <i class="fas fa-bars humberger" onclick="openMenu()"></i>
+
+      <div class="side-menu" id="sideMenu">
+        <i class="fa-solid fa-xmark close-btn" onclick="closeMenu()"></i>
+        <ul>
+          <a href="#" class="icon" style="color:rgb(211, 159, 0); transform: scale(1.05);"><i class="fas fa-home"></i><li>Accueil</li></a>
+          <a href="./Pages/propos.html" class="icon"><i class="fas fa-info-circle"></i><li>A propos</li></a>
+          <a href="./Pages/admin.html" class="icon"><i class="fas fa-gavel"></i> <li>Administration</li></a>
+          <a href="./Pages/economie.html" class="icon"><i class="fas fa-coins"></i><li>Economie</li></a>
+          <a href="./Pages/tourisme.html" class="icon"><i class="fas fa-binoculars"></i><li>Tourisme</li></a>
+        </ul>
+      </div>
+
+      <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
     </nav>
   </header>
 
@@ -35,11 +53,10 @@
         <h1>Province du Kasai-central</h1>
         <p class="para">Construire la paix, cultiver la prospérité.</p>
         <p class="para1">Bienvenue au Kasaï-central, cœur vibrant de la République Démocratique du Congo.
-Terre de culture, de courage et de renouveau, notre province vous ouvre ses portes pour découvrir ses richesses, son peuple et sa vision d’avenir.
-Le Kasaï, fier de ses racines, résolument tourné vers demain.</p>
+          Terre de culture, de courage et de renouveau, notre province vous ouvre ses portes pour découvrir ses richesses, son peuple et sa vision d’avenir.
+          Le Kasaï, fier de ses racines, résolument tourné vers demain.</p>
         <div class="boutton">
           <a href="./Pages/propos.html"><button >En savoir plus &rarr;</button></a>
-          <a href="./Pages/other pages/decouverte.html"><button >Découvrir la province</button></a>
         </div>
       </div>
     </div>
@@ -69,7 +86,7 @@ Le Kasaï, fier de ses racines, résolument tourné vers demain.</p>
         <div class="carte2">
           <img src="./tools/img/carte/close-up-beautiful-gorilla-wild_23-2151637632.avif" alt="">
           <div class="carte-texte">
-            <h2>Culture et Tourisme</h2>
+            <h2>Culture & Tourisme</h2>
             <p>Le Kasaï-central, c’est une terre de beauté, de mémoire et d’expression vivante.
 Des paysages naturels à couper le souffle, une culture riche de traditions et un artisanat reconnu font de notre province une destination unique à découvrir.
 Le tourisme et la culture sont au cœur de notre identité et de notre rayonnement.</p>
@@ -78,17 +95,19 @@ Le tourisme et la culture sont au cœur de notre identité et de notre rayonneme
         </div>
       </div>
 
-      <div class="carte3">
-        <div class="sante">
+     
+
+      <div class="carte1" >
+        <div class="admin" id="sectionInfra">
           <img src="./tools/img/carte/laughing-african-american-boy-patient-taking-male-doctor-s-stethoscope-hospital-hospital-medical-healthcare-services_13339-337829.avif" alt="">
-          <h2>Santé et Education</h2>
+          <h2>Santé & Éducation</h2>
           <div class="pp">
             <p>La santé et l’éducation sont au cœur du développement humain, car elles forment les bases essentielles d’une société équilibrée, consciente et capable de construire son avenir.</p>
           <a href="./Pages/other pages/sante.html">En savoir plus &rarr;</a>
           </div>
         </div>
 
-        <div class="infra">
+        <div class="economie"id="sectionSante">
           <img src="./tools/img/carte/construction-site-busy-operate-beginning-building-new-complex-infrastructure-project_926199-2053302.avif" alt="">
           <h2>Infrastructures</h2>
           <div class="pp">
@@ -98,81 +117,74 @@ Le tourisme et la culture sont au cœur de notre identité et de notre rayonneme
         </div>
       </div>
     </div>
-    <div class="Actualite">
+    <div class="Actualite" id="sectionActualite">
       <h1>Actualités</h1>
-      <div class="carousel-wrapper">
-        <div class="carousel-container">
-          <div class="carousel">
-            <div class="card p1">
-              <img src="./tools/img/actualite/cutting-red-ribbon-with-scissors-new-business-venture-opening-ceremony_524291-227.avif" alt="">
+      <div class="container swiper">
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+              <a target="_blank" href="https://www.radiookapi.net/2025/04/29/actualite/societe/kananga-le-pnud-initie-un-projet-dutilisation-de-gaz-de-petrole"><img src="./tools/img/actualite/cutting-red-ribbon-with-scissors-new-business-venture-opening-ceremony_524291-227.avif" alt=""></a>
               <div class="liste">
-                <h4>Lorem, ipsum dolor.</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint vero vel quam voluptates ipsa autem.</p>
+                <h4>Kananga : le PNUD lance un projet de gaz pour la cuisine.</h4>
+                <p>Le PNUD à Kananga met en place un projet pour promouvoir l’usage du gaz de pétrole liquéfié en cuisine, visant à améliorer la santé, réduire la pollution et faciliter la vie des ménages.</p>
               </div>
             </div>
           
-           <div class="card p2">
-              <img src="./tools/img/actualite/hands-shake-agreement-diversity-conference-partnership_53876-46040.avif" alt="">
+            <div class="card-item swiper-slide">
+              <a href="https://www.radiookapi.net/2025/05/13/actualite/revue-de-presse/la-reference-plus-centrale-hydroelectrique-de-grand-katende-les"><img src="./tools/img/actualite/hands-shake-agreement-diversity-conference-partnership_53876-46040.avif"></a>
               <div class="liste">
-                <h4>Lorem, ipsum dolor.</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint vero vel quam voluptates ipsa autem.</p>
+                <h4>Grand Katende : travaux relancés à la centrale hydroélectrique.</h4>
+                <p>La construction de la centrale hydroélectrique de Grand Katende a repris, offrant de nouvelles perspectives d’alimentation en énergie pour le Kasaï-Central et ses environs.</p>
               </div>
             </div>
           
-            <div class="card p3">
-              <img src="./tools/img/actualite/happy-african-american-lady-safety-helmet-with-measuring-tape-near-building-construction_23-2148039954.avif" alt="">
+            <div class="card-item swiper-slide">
+              <a target="_blank" href="https://www.radiookapi.net/2025/05/20/actualite/politique/les-deputes-provinciaux-du-kasai-central-denoncent-le-faible-taux"><img src="./tools/img/actualite/happy-african-american-lady-safety-helmet-with-measuring-tape-near-building-construction_23-2148039954.avif" alt=""></a>
               <div class="liste">
-                <h4>Lorem, ipsum dolor.</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint vero vel quam voluptates ipsa autem.</p>
+                <h4>Députés du Kasaï-Central dénoncent le retard des travaux d’infrastructure.</h4>
+                <p>Les députés du Kasaï-Central s’inquiètent du retard des travaux d’infrastructure et demandent un meilleur suivi pour accélérer les chantiers.</p>
               </div>
             </div>
           
-            <div class="card p4">
-              <img src="./tools/img/actualite/professionals-business-assemble-corporate-gathering-that-includes-convention-conferencexa_28914-69532.avif" alt="">
+            <div class="card-item swiper-slide">
+              <a target="https://www.radiookapi.net/2025/05/13/actualite/revue-de-presse/la-reference-plus-centrale-hydroelectrique-de-grand-katende-les" href="https://www.radiookapi.net/2025/04/29/actualite/societe/kananga-plus-80-victimes-de-kamuina-nsapu-beneficient-des-kits-de"><img src="./tools/img/actualite/bitmap_400_nocrop_1_1_20250307161901209580_IMG-20250307-WA0030.jpg"></a>
               <div class="liste">
-                <h4>Lorem, ipsum dolor.</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint vero vel quam voluptates ipsa autem.</p>
+                <h4>Kananga : 80 victimes de Kamuina Nsapu reçoivent des kits de réinsertion.</h4>
+                <p>À Kananga, plus de 80 victimes du conflit Kamuina Nsapu ont reçu des kits de réinsertion pour faciliter leur retour à la vie normale et soutenir leur reconstruction sociale et économique.</p>
               </div>
             </div>
           
-            <div class="card p5">
-              <img src="./tools/img/actualite/teenagers-protest-surrounded-by-diverse-crowd-activists-generative-ai_266732-44361.jpg" alt="">
+            <div class="card-item swiper-slide">
+              <a href="https://www.radiookapi.net/2025/06/18/actualite/politique/la-societe-civile-du-kasai-central-condamne-les-tensions-lassemblee"><img src="./tools/img/actualite/teenagers-protest-surrounded-by-diverse-crowd-activists-generative-ai_266732-44361.jpg" alt=""></a>
               <div class="liste">
-                <h4>Lorem, ipsum dolor.</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint vero vel quam voluptates ipsa autem.</p>
+                <h4>La société civile du Kasaï-Central condamne les tensions à l’assemblée.</h4>
+                <p>La société civile du Kasaï-Central déplore les conflits à l’assemblée provinciale, appelant au dialogue pour préserver la paix et la stabilité dans la région.</p>
               </div>
             </div>
             
-            <div class="card p6">
+            <div class="card-item swiper-slide plus">
               <div class="btn">
                 <p>Voir toutes les Actualités</p>
                 <a href="./Pages/other pages/actualite.html"><button>+</button></a>
               </div>
             </div>
           </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
         </div>
       </div>
     </div>
 
-    <div id="sectionContact" class="contact">
-      contact
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./Script.js"></script>
   </body>
-
+  
   <footer>
     <div class="pied">
       <div class="titrePied">
         
-         <div>
-          <h4>A propos de la province</h4>
-          <uv class="classe">
-            <li>Histoire de la province</li>
-            <li>Carte géographique</li>
-            <li>Population & culutures</li>
-            <li>Symboles officiels</li>
-          </uv>
-        </div>
-
          <div>
           <h4>Institutions provinciales</h4>
           <uv class="classe">
@@ -183,11 +195,21 @@ Le tourisme et la culture sont au cœur de notre identité et de notre rayonneme
         </div>
 
          <div>
+          <h4>Liens rapides</h4>
+          <uv class="classe">
+            <a href="./Pages/propos.html"><li>A propos</li></a>
+            <a href="./Pages/admin.html"><li>Administration</li></a>
+            <a href="./Pages/economie.html"><li>Economie</li></a>
+            <a href="./Pages/tourisme.html"><li>Tourisme</li></a>
+          </uv>
+        </div>
+
+         <div>
           <h4>Contact</h4>
           <uv class="classe">
-            <a href="#" class="footerIcon"><i class="fas fa-location-dot"></i><li>RDC,kasai-central</li></a>
-            <a href="#" class="footerIcon"><i class="fas fa-phone"></i><li>+243 993434727</li></a>
-            <a href="#" class="footerIcon"><i class="fas fa-envelope"></i><li>kasaicentral@gmail.cd</li></a>
+            <a href="https://www.google.com/maps/place/Kasa%C3%AF-Central/@-6.0410388,19.9361622,7z/data=!3m1!4b1!4m6!3m5!1s0x1a275db9ffe74dad:0x4a32c705450e287b!8m2!3d-6.2514921!4d22.2384017!16s%2Fg%2F11bx55x219?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="footerIcon"><i class="fas fa-location-dot"></i><li>RDC,kasai-central</li></a>
+            <a href="https://wa.me/243993434727" target="_blank" class="footerIcon"><i class="fab fa-whatsapp"></i><li>+243 993434727</li></a>
+            <a href="mailto:amanimusafiri2007@gmail.com" class="footerIcon" target="_blank"><i class="fas fa-envelope"></i><li>kasaicentral-rdc@gmail.cd</li></a>
           </uv>
         </div>
 
@@ -195,10 +217,9 @@ Le tourisme et la culture sont au cœur de notre identité et de notre rayonneme
           <h4>Suivez-nous sur</h4>
           <uv class="classe">
             <a href="#" classe="footerIcon"><i class="fab fa-facebook"></i><li>Facebook</li></a>
-            <a href="#" classe="footerIcon"><i class="fab fa-youtube"></i><li>Youtube</li></a>
-            <a href="#" classe="footerIcon"><i class="fab fa-whatsapp"></i><li>WhastApp</li></a>
+            <a href="https://www.youtube.com/playlist?list=PLbwrNdW0xmAGtzhy-kQlyPohaFONRtW9f" target="_blank" classe="footerIcon"><i class="fab fa-youtube"></i><li>Youtube</li></a>
             <a href="#" classe="footerIcon"><i class="fab fa-x-twitter"></i><li>X(Twitter)</li></a>
-            <a href="#" classe="footerIcon"><i class="fab fa-instagram"></i><li>Instagram</li></a>
+            <a href="https://www.instagram.com/fnjec_kasai_central/" target="_blank" classe="footerIcon"><i class="fab fa-instagram"></i><li>Instagram</li></a>
           </uv>
         </div>
 
@@ -209,8 +230,5 @@ Le tourisme et la culture sont au cœur de notre identité et de notre rayonneme
       </div>
     </div>
   </footer>
-  
-  <link rel="stylesheet" href="./tools/css/style_accueil.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </body>
 </html>
