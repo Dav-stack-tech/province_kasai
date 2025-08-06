@@ -305,20 +305,41 @@ body{
     align-items: center;
     margin-bottom: 0;
   }
-  .ressource h2{
-    margin-left: 0;
+  .res h2{
+    margin-left: -140px !important;
   }
   .ressource1{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .mine{
+    width: auto;
+  }
   .imgMine{
     height: auto;
+    width: auto !important;
   }
   .imgMine img{
     height: auto;
     width: 100%;
+  }
+}
+
+@media(max-width:345px){
+  .logo img{
+    width: 80px;
+  }
+  .navBar .logo p{
+    font-size: 22px;
+  }
+
+  .textEconomie{
+    margin-left: 0;
+  }
+  .ressource h2{
+    margin-left: 5px;
+    font-size: 25px;
   }
 }
 

@@ -158,6 +158,14 @@ a:hover{
     display: none !important;
   }
 }
+@media(max-width:345px){
+  .logo img{
+    width: 80px;
+  }
+  .navBar .logo p{
+    font-size: 22px;
+  }
+}
 .nav_info.show{
   display: flex;
 }

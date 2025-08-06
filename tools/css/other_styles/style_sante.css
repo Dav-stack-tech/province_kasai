@@ -82,6 +82,7 @@ header{
   }
 }
 
+
 body{
   margin-top: 91px;
 }
@@ -371,6 +372,24 @@ footer{
   }
   .titrePied div h4,.classe li,.legal{
     font-size: 18px !important;
+  }
+  .carte{
+    width: auto;
+  }
+  .imgCarte{
+    height: auto;
+  }
+  .imgCarte img{
+    height: auto;
+    width: 100%;
+  }
+  .p{
+    margin: 0 10px 0 10px !important;
+  }
+}
+@media(max-width:400px){
+  .titreSante h1{
+    font-size: 20px;
   }
 }
 

@@ -159,6 +159,14 @@ a:hover{
     display: none !important;
   }
 }
+@media(max-width:345px){
+  .logo img{
+    width: 80px;
+  }
+  .navBar .logo p{
+    font-size: 22px;
+  }
+}
 .nav_info.show{
   display: flex;
 }
@@ -290,6 +298,11 @@ body{
   font-size: 30px;
   padding-left: 10px;
   border-left: 4px solid rgb(211, 159, 0);
+}
+@media(max-width:500px){
+  .textGovener h2{
+    font-size: 25px;
+  }
 }
 .textGovener p{
   display: flex;
