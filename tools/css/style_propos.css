@@ -24,7 +24,7 @@ a:hover{
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
   bottom: 0;

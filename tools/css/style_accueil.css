@@ -29,7 +29,7 @@ a:hover{
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.3);
   height: 80px;
   width: 100%;
   backdrop-filter:blur(30px);
