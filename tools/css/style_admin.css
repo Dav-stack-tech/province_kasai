@@ -274,13 +274,24 @@ body{
   gap: 30px;
   margin-bottom: 40px;
 }
+.president{
+  padding: 5px;
+  border: 1px solid rgb(0, 169, 11);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  gap: 30px;
+  margin-bottom: 40px;
+}
 
 .govener{
   padding:  5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: start;
   gap: 30px;
   min-width: 407px !important;
 }
@@ -293,11 +304,49 @@ body{
   flex-wrap: wrap !important;
   min-width: 400px;
 }
+.textGovener p{
+  column-count: unset !important;
+  display: block !important;
+  white-space: normal !important;
+}
+.textGovener p strong{
+  display: inline !important;
+  white-space: normal !important;
+}
 .textGovener h2{
   color: rgb(211, 159, 0);
   font-size: 30px;
   padding-left: 10px;
   border-left: 4px solid rgb(211, 159, 0);
+}
+.gouvernement{
+  padding: 5px;
+  border: 1px solid rgb(0, 169, 11);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.gouvernement h1{
+  color: rgb(211, 159, 0);
+  font-size: 32px;
+  margin-left: 10px;
+}
+.localisationG{
+  margin-top: -30px;
+  padding: 5px;
+}
+.localisationG h2{
+  color: rgb(0, 169, 11);
+}
+.localisationG iframe{
+  height: 450px;
+  width:100%;
+  border: 0;
+  border-radius: 10px;
 }
 @media(max-width:500px){
   .textGovener h2{
@@ -349,7 +398,7 @@ body{
 }
 
 .imgVcgovener{
-  height: 420px;
+  height: 310px;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -374,7 +423,7 @@ body{
 }
 
 .imgOfficiel{
-  height: 420px;
+  height: 310px;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -388,17 +437,24 @@ body{
   transform: scale(1.03);
 }
 
-@media(max-width:1095px){
-  .bibliographie{
-    gap: 0;
-  }
+@media(max-width:1204px){
   .other{
     display: flex;
     flex-direction: column;
   }
-  .imgVcgovener,.imgOfficiel,.imgGovener{
+}
+
+@media(max-width:1095px){
+  .bibliographie{
+    gap: 0;
+  }
+  .imgVcgovener,.imgOfficiel{
     height: auto;
     padding: 0;
+    width: auto;
+  }
+  .imgGovener{
+    padding: 20px;
     width: auto;
   }
   .imgVcgovener img,.imgOfficiel img,.imgGovener{
@@ -406,6 +462,7 @@ body{
     width: 100%;
   }
 }
+
 @media(max-width:442px){
   .imgGovener{
     display: flex;
@@ -461,13 +518,14 @@ body{
 .org{
   position: relative;
   z-index: 2;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
   color: white;
   font-size: 17px;
-  padding-left: 20px;
+  padding:0 20px 0 20px;
 }
+
 
 .org li{
   font-size: 18px;
@@ -477,6 +535,17 @@ body{
 .orga2{
   border-left: 1px solid white;
   padding-left: 10px;
+}
+
+.orga1 h3,.orga2 h3{
+  font-weight: bold;
+  color: rgb(75, 241, 86);
+  border-left:3px solid rgb(75, 241, 86);
+  padding-left: 12px;
+  font-size: 22px;
+}
+.orga1 strong,.orga2 strong{
+  color: rgb(231, 183, 38);
 }
 
 @media(max-width:790px){
@@ -575,6 +644,22 @@ body{
   margin-top: -10px;
 }
 
+.gouve{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  background-image: url(./../img/admin/gouvernorat.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  gap: 20px;
+}
+
 .transparence{
   padding-top: 20px;
   padding-bottom: 20px;
@@ -590,6 +675,8 @@ body{
   border-radius: 5px;
   gap: 20px;
 }
+
+
 
 
 .transparence h2{
