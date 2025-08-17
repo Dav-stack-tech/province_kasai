@@ -287,7 +287,6 @@ body{
 }
 
 .govener{
-  padding:  5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -302,7 +301,12 @@ body{
   margin-left: 20px;
   flex:1;
   flex-wrap: wrap !important;
-  min-width: 400px;
+
+}
+@media(max-width:700px){
+  .textGovener{
+    margin-left: 5px !important;
+  }
 }
 .textGovener p{
   column-count: unset !important;
@@ -454,8 +458,11 @@ body{
     width: auto;
   }
   .imgGovener{
-    padding: 20px;
+    padding: 10px;
     width: auto;
+  }
+  .textGovener{
+    padding: 10px;
   }
   .imgVcgovener img,.imgOfficiel img,.imgGovener{
     height: auto;
