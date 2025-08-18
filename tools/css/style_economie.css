@@ -440,32 +440,13 @@ body{
 footer{
   margin: -10px !important;
 }
+
 .footerIcon{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   color: rgb(209, 209, 209);
-}
-@media(max-width:1000px){
-  .titrePied{
-    display: flex;
-    flex-direction: column !important;
-    align-items: center;
-    gap: 40px !important;
-    font-size: 25px;
-  }
-  .titrePied div h4,.classe li,.legal{
-    font-size: 25px !important;
-  }
-}
-@media(max-width:730px){
-  .titrePied{  
-    font-size: 18px;
-  }
-  .titrePied div h4,.classe li,.legal{
-    font-size: 18px !important;
-  }
 }
 
 .pied{
@@ -493,7 +474,7 @@ footer{
 .titrePied div{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
 }
 .titrePied div h4{
   color: rgb(255, 255, 255);
@@ -501,7 +482,7 @@ footer{
 .classe{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   color: rgb(209, 209, 209);
 }
 
@@ -530,4 +511,35 @@ footer{
 }
 .legal p{
    color: rgb(209, 209, 209);
+}
+
+@media(max-width:1000px){
+  .titrePied div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .classe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .titrePied{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    gap: 40px !important;
+     font-size: 25px;
+  }
+  .titrePied div h4,.classe li,.legal{
+    font-size: 25px !important;
+  }
+}
+@media(max-width:730px){
+  .titrePied{  
+    font-size: 18px;
+  }
+  .titrePied div h4,.classe li,.legal{
+    font-size: 18px !important;
+  }
 }
